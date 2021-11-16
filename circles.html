@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // var obj = [
+        //     circleOne = {
+        //         radius: 10,
+        //         dotNum: 3
+        //     },
+        //     circleTwo = {
+        //         radius: 6,
+        //         dotNum: 8
+        //     },
+        //     circleThree = {
+        //         radius: 12,
+        //         dotNum: 4
+        //     }
+        // ];
+
+        var obj = [
+            c1radius = 10,
+            c1dotNum = 3,
+            c2radius = 6,
+            c2dotNum = 8,
+            c3radius = 12,
+            c3dotNum = 4
+        ];
+
+
+        // var str = "";
+        // function objProperties(obj) {
+        //     for (var tempProperty in obj)
+        //         str += tempProperty + ": " + obj[tempProperty] + "\n";
+        //     alert(str);
+        // }
+        // objProperties(obj);
+
+        // var x=+prompt("Выберете окружность: 1, 2 или 3.");
+        function radChange(givenObj) {
+            let x = +prompt("Выберете окружность: 1, 2 или 3.");
+            switch (x) {
+                case 1:
+                    alert("Радиус 1-ой окружности был : " + givenObj.c1radius + ", стал: " + (givenObj.c1radius * 2));
+                    break;
+                case 2:
+                    alert("Радиус 2-ой окружности был : " + givenObj.c2radius + ", стал: " + (givenObj.c2radius + 4));
+                    // givenObj.circleTwo.radius=givenObj.circleTwo.radius+4;
+                    break;
+                case 3:
+                    alert("Радиус 3-ей окружности был : " + givenObj.c3radius + ", стал: " + (givenObj.c3radius / 3));
+                    // givenObj.circleThree.radius=givenObj.circleThree.radius/3;
+                    break;
+            }
+
+        }
+        radChange(obj);
+
+// var x=+prompt("Выберете окружность: 1, 2 или 3.");
+// function radChange(givenObj){
+//     let x=+prompt("Выберете окружность: 1, 2 или 3.");
+//     switch(N){
+//         case 1: 
+//         alert("Радиус 1-ой окружности был : " + givenObj.circleOne.radius + ", стал: " + (givenObj.circleOne.radius*2));
+//         break;
+//         case 2: 
+//         alert("Радиус 2-ой окружности был : " + givenObj.circleTwo.radius + ", стал: " + (givenObj.circleTwo.radius+4));
+//         // givenObj.circleTwo.radius=givenObj.circleTwo.radius+4;
+//         break;
+//         case 3: 
+//         alert("Радиус 3-ей окружности был : " + givenObj.circleThree.radius + ", стал: " + (givenObj.circleThree.radius/3));
+//         // givenObj.circleThree.radius=givenObj.circleThree.radius/3;
+//         break;
+//     }
+
+// }
+// radChange(obj, x);
+
+
+
+    </script>
+</body>
+
+</html>
